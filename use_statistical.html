@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- BEGIN META --> 
+	  <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="Custom Theme">
+	  <!-- END META -->
+     
+      <!-- BEGIN SHORTCUT ICON -->
+	  <link rel="rel icon" href="../../images/common/wrxicon.ico" type="image/x-icon">
+	  <!-- END SHORTCUT ICON -->
+      <title>后台管理案例（bootstrap）</title>
+	  
+	  <!-- BEGIN STYLESHEET --> 
+      <link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+      <link href="css/common.css" rel="stylesheet">
+      <link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+      <link href="css/animations.css" rel="stylesheet"><!-- ANIMATION CSS -->
+      <link rel="stylesheet" href="css/easyui_change1.css">
+      <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME ICON STYLESHEET -->
+      <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css"><!-- DATATABLE CSS -->
+      <link href="css/style.css" rel="stylesheet"><!-- THEME BASIC CSS -->
+      <link href="css/style-responsive.css" rel="stylesheet"><!-- THEME BASIC RESPONSIVE  CSS -->
+      <link rel="stylesheet" href="css/byit.css">
+      <link rel="stylesheet" href="css/layui.css">
+      <script src="js/jquery-1.11.1.min.js" ></script>
+      <script src="layer/layer.js"></script>
+      <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <style>
+         
+      </style>
+      <script src="js/jquery-1.8.3.min.js" ></script><!-- BASIC JS LIABRARY 1.8.3 -->
+	  <script src="js/bootstrap.min.js" ></script><!-- BOOTSTRAP JS  -->
+	  <!-- END STYLESHEET --> 
+   </head>
+   <body>
+   <!-- BEGIN SECTION --> 
+      <section id="container" class="">
+	    <!-- BEGIN HEADER --> 
+         <header class="header white-bg">
+        <!-- SIDEBAR TOGGLE BUTTON  END-->
+            <a href="javascript:;" class="logo" style='margin-left:6px;'><!-- olive<span>admin</span> -->
+                <img src="img/logo@3x.png" alt="" style='width:120px;height:auto;'>
+            </a>   
+        <!-- END HEADER NAV -->
+        <!-- START USER LOGIN DROPDOWN  -->
+            <div class="top-nav ">
+               <ul class="nav pull-right top-menu">
+                <li class="dropdown dropdownli box-collect" style=''>
+                     <span class='fa fa-bookmark'></span>
+                  </li>
+                  <li class="dropdown dropdownli" style=''>
+                     <span class='fa fa-sign-in'></span>
+                  </li>
+                  <li class="dropdown dropdownli" style=''>
+                     <span class='fa fa-gear'></span>
+                  </li>
+               </ul>
+            </div>
+			<!-- END USER LOGIN DROPDOWN  -->
+         </header>
+		 <!-- END HEADER --> 
+		 <!-- BEGIN SIDEBAR --> 
+         <aside>
+            <div id="sidebar" class="nav-collapse">
+               <ul class="sidebar-menu" id="nav-accordion">
+                  <li>
+                     <a href="javascript:;">
+                       <i class="fa fa-dashboard"></i>
+                       <span>返回首页</span>
+                     </a>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                       <i class="fa fa-laptop"></i>
+                       <span>数据答疑</span>
+                       <!-- <span class="label label-success span-sidebar">4</span> 显示条数-->
+                     </a>
+                     <ul class="sub">
+                        <li><a href="javascript:;">人口信息分析</a></li>
+                        <li><a href="javascript:;">省厅级采集情况</a></li>
+                       <!--  <li><a href="language_switch_bar.html"></a></li>
+                        <li><a href="email_template.html" target="_blank"></a></li> -->
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                       <i class="fa fa-book"></i>
+                       <span>数据智库</span><!-- 
+                       <span class="label label-info span-sidebar">7</span> -->
+                     </a>
+                     <ul class="sub">
+                        <li><a href="javascript:;">使用手册</a></li>
+                        <li><a href="javascript:;">学习视频</a></li>
+                        <li><a href="javascript:;">使用操作</a></li>
+                        <li><a href="javascript:;">常用操作</a></li>
+                        <li><a href="javascript:;">常用资料</a></li>
+                        <li><a href="javascript:;">常见问题</a></li>
+                        <li><a href="javascript:;">快速入门</a></li>
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                       <i class="fa fa-cogs"></i>
+                       <span>预约取数</span>
+                       <!-- <span class="label label-primary span-sidebar">5</span> -->
+                     </a>
+                     <ul class="sub">
+                        <li><a href="javascript:;">数据快查</a></li>
+                        <!-- <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="todo_list.html">Todo List</a></li>
+                        <li><a href="draggable_portlet.html">Draggable Portlets</a></li> -->
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                       <i class="fa fa-tasks"></i>
+                       <span>数据下载</span>
+                       <!-- <span class="label label-info span-sidebar">7</span> -->
+                     </a>
+                     <ul class="sub">
+                        <!-- <li><a href="form_component.html">Form Components</a></li>
+                        <li><a href="advanced_form_components.html">Advanced Components</a></li>
+                        <li><a href="form_wizard.html">Form Wizards</a></li>
+                        <li><a href="form_validation.html">Form Validation</a></li>
+                        <li><a href="dropzone.html">Dropzone File Upload</a></li>
+                        <li><a href="inline_editor.html">Inline Editor</a></li>
+                        <li><a href="file_upload.html">Multiple File Upload</a></li> -->
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;" class="active">
+                       <i class="fa fa-th"></i>
+                       <span>系统管理</span>
+                       <!-- <span class="label label-inverse span-sidebar">5</span> -->
+                     </a>
+                     <ul class="sub">
+                        <li><a href="javascript:;">角色管理</a></li>
+                        <li><a href="javascript:;">用户管理</a></li>
+                        <li><a href="javascript:;">系统菜单管理</a></li>
+                        <li><a href="use_statistical2.html">数据列表</a></li>
+                        <li class="active"><a href="use_statistical.html">使用统计</a></li>
+                        <li><a href="javascript:;">tableau服务器配置</a></li>
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                       <i class=" fa fa-envelope"></i>
+                       <span>日志分析</span>
+                       <!-- <span class="label label-danger span-sidebar">2</span> -->
+                     </a>
+                     <ul class="sub">
+                        <!-- <li><a href="inbox.html">Inbox</a></li>
+                        <li><a href="inbox_details.html">Mail Details</a></li> -->
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                         <i class=" fa fa-bar-chart-o"></i>
+                         <span>数据分析</span>
+                         <!-- <span class="label label-warning span-sidebar">4</span> -->
+                     </a>
+                     <ul class="sub">
+                        <!-- <li><a href="morris.html">Morris Chart</a></li>
+                        <li><a href="chartjs.html">Chartjs Chart</a></li>
+                        <li><a href="flot_chart.html">Flot Charts</a></li>
+                        <li><a href="xchart.html">xChart</a></li> -->
+                     </ul>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                       <i class="fa fa-shopping-cart"></i>
+                       <span>报表统计分析</span>
+                       <!-- <span class="label label-success span-sidebar">2</span> -->
+                     </a>
+                     <ul class="sub">
+                        <!-- <li><a href="product_list.html">List View</a></li>
+                        <li><a href="product_details.html">Details View</a></li> -->
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="google_maps.html">
+                       <i class="fa fa-map-marker"></i>
+                       <span>数据补录</span>
+                     </a>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;" >
+                       <i class="fa fa-glass"></i>
+                       <span>数据订阅</span>
+                       <!-- <span class="label label-primary span-sidebar">10</span> -->
+                     </a>
+                     <ul class="sub">
+                     </ul>
+                  </li>
+                  <li>
+                     <a href="login.html">
+                       <i class="fa fa-user"></i>
+                       <span>数据指标</span>
+                     </a>
+                  </li>
+                  <li class="sub-menu">
+                     <a href="javascript:;">
+                     <i class="fa fa-sitemap"></i>
+                     <span>三级菜单</span>
+                     </a>
+                     <ul class="sub">
+                        <li><a href="javascript:;"></a></li>
+                        <li class="sub-menu">
+                           <a href="javascript:;"><span class="label label-primary">1</span></a>
+                           <ul class="sub">
+                              <li><a href="javascript:;"></a></li>
+                              <li class="sub-menu">
+                                 <a href="javascript:;"><span class="label label-primary">3</span></a>
+                                 <ul class="sub">
+                                    <li><a href="javascript:;"></a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                    <li><a href="javascript:;"></a></li>
+                                 </ul>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </aside>
+		 <!-- END SIDEBAR --> 
+		 
+		 <!-- BEGIN MAIN CONTENT --> 
+         <section id="main-content">
+		    <!-- BEGIN WRAPPER  -->
+            <section class="wrapper site-min-height">
+                <!-- <iframe src="table.html" frameborder="0" style='width:100%;' id='iframes_id'></iframe> -->
+               	<iframe src="checkData.html" frameborder="0" style='width:100%;' id='iframes_id'></iframe>
+            </section>
+			<!-- END WRAPPER  -->
+         </section>
+		 <!-- END MAIN CONTENT --> 
+		 <!-- BEGIN FOOTER --> 
+         <footer class="site-footer" style='padding:0;'>
+            Copyright ©2011-2018 Byit, INC. All Rights Reserved.京ICP备11041501号-1京公网安 备111010802011215号
+         </footer>
+		 <!-- END FOOTER --> 
+      </section>
+	  <!-- END SECTION -->
+    	<!-- 弹出框iframes -->
+		<!-- <script src="js/editable-table.js" ></script> -->
+	<script src="js/jquery-1.8.3.min.js" ></script><!-- BASIC JS LIABRARY 1.8.3 -->
+	<script src="js/bootstrap.min.js" ></script><!-- BOOTSTRAP JS  -->
+	<script src="js/jquery.dcjqaccordion.2.7.js"></script>
+	<script src="js/common-scripts.js" ></script>
+
+   <script type="text/javascript">
+       var iframes_h = $('.site-min-height').height();
+       $('#iframes_id').height(iframes_h);
+       $('#box_iframes').height($('.model_iframes_in').height());
+        $('.box-collect').click(function(){
+          layer.open({
+            type: 2,
+            title: '收藏列表',
+            fix: false,
+            maxmin: true,
+            shadeClose: true,
+            area: ['1000px', '530px'],
+            content: 'collection_list.html',
+            end: function(){
+              layer.tips('Hi', '#about', {tips: 1})
+            }
+          });
+        });
+   </script>
+   </body>
+</html>
+
+

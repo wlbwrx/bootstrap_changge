@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据订阅</title>
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+	<link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+	<link href="css/animations.css" rel="stylesheet"><!-- ANIMATION CSS -->
+	<link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME ICON STYLESHEET -->
+	<link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css"><!-- DATATABLE CSS -->
+	<link href="css/style.css" rel="stylesheet"><!-- THEME BASIC CSS -->
+	<link href="css/sub_datacss/index.css" rel="stylesheet">
+	<style>
+		@font-face {font-family: 'my_font';
+		    src: url('css/sub_datacss/font/iconfont.eot'); /* IE9*/
+		    src: url('css/sub_datacss/font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		    url('css/sub_datacss/font/iconfont.woff') format('woff'), /* chrome、firefox */
+		    url('css/sub_datacss/font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+		    url('css/sub_datacss/font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+		}
+		select.form-control{font-size:13px;color:#999;}
+		select.form-control:focus,input.form-control:focus{border:1px solid #6dbb4a;color:#999;font-size:13px;}
+		.label_check input{float: left;}
+		.label_check .chekSpan{float: left;}
+		.xuanze_list li span.chekSpan{width:auto;}
+		body,html{padding:20px;}
+	</style>
+	<script src='js/jquery-1.11.1.min.js'></script>
+</head>
+<body>
+	<div class="tanchuang" style=''>
+		<!--弹框1-->
+		<div class="tanchuang1 tanchuang0" style=''>
+			<div class="tanchuang1_t">
+				<div class="tanchuang1_t_t">
+					&#xe67a;
+				</div>
+				<div class="tanchuang1_t_b">
+					报告名称
+				</div>
+			</div>
+			<div class="tanchuang1_c">
+				<div class="tanchuang1_c_l">
+					<div class="name_input">
+						<span>报告名称</span>
+						<div class="float-rightd" style="width:184px;display:inline-block;margin-top:32px;">
+		                    <select class="form-control m-bot15 form-control_new">
+		                       <option>三十检测</option>
+		                       <option>四实检测</option>
+		                       <option>五实检测</option>
+		                       <option>六实检测</option>
+		                       <option>七实检测</option>
+		                    </select>
+		                 </div>
+					</div>
+					<ul class='xuanze_list'>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tanchuang1_b">
+				<button id='next_1' class='btn green btn_gray'>下一步</button>
+			</div>
+		</div>
+		<!--弹框1结束-->
+		<!--弹框2-->
+		<div class="tanchuang1 tanchuang2" style='display:none;'>
+			<div class="tanchuang1_t">
+				<div class="tanchuang1_t_t">
+					&#xe60e;
+				</div>
+				<div class="tanchuang1_t_b">
+					发送时间
+				</div>
+			</div>
+			<div class="tanchuang1_c">
+				<div class="tanc_c_top">
+					选择定时发送的时间（<input type="radio" name='rili'>公历<input type="radio" name='rili'>农历）
+				</div>
+				<div class="tanc_c_center">
+					<ul style='margin-top: 10px;'>
+						<li>
+							<div class="float-rightd" style="display:inline-block;">
+			                    <select class="form-control m-bot15 form-control_new">
+			                       <option>仅发一次</option>
+			                       <option>每月一次</option>
+			                       <option>每周一次</option>
+			                       <option>每日一次</option>
+			                       <option>每年一次</option>
+			                    </select>
+			                 </div>
+						</li>
+						<li>
+							<input type="number" value='2016'>
+							<span>年</span>
+						</li>
+						<li>
+							<input type="number" value='12'>
+							<span>月</span>
+						</li>
+						<li>
+							<input type="number" value='13'>
+							<span>日</span>
+						</li>
+						<li>
+							<input type="number" value='00'>
+							<span>时</span>
+						</li>
+						<li>
+							<input type="number" value='00'>
+							<span>分</span>
+						</li>
+					</ul>
+				</div>
+				<div class="tanc_c_bottom">
+					本邮件将在2016年6月6日12时00分投递到对方邮箱
+				</div>
+			</div>	
+			<div class="tanchuang1_b">
+				<button style='background:transparent;' id='prev_1'>上一步</button>
+				<button id='next_2'>下一步</button>
+			</div>
+		</div>
+		<!--弹框2结束-->
+		<!--弹框3-->
+		<div class="tanchuang1 tanchuang3" style='display:none;'>
+			<div class="tanchuang1_t">
+				<div class="tanchuang1_t_t">
+					&#xe616;
+				</div>
+				<div class="tanchuang1_t_b">
+					输入邮件
+				</div>
+			</div>
+			<div class="tanchuang1_c" style=''>
+				<div class="mail_t">
+					<input type="mail">
+					<button type="button" class="btn btn-success" style='margin-top: -4px;margin-left: 14px;'>
+                    添加
+                  	</button>
+				</div>
+				<div class="mail_c">
+					已选联系人(0)
+				</div>
+				<div class="mail_b">
+					<ul class="mail_ul">
+						<li>
+							<input type="checkbox">
+							<span>15011546708@163.com</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>15011546708@163.com</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>15011546708@163.com</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>15011546708@163.com</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>15011546708@163.com</span>
+						</li>
+						<li>
+							<input type="checkbox">
+							<span>15011546708@163.com</span>
+						</li>
+					</ul>
+				</div>
+			</div>	
+			<div class="tanchuang1_b">
+				<button style='background:transparent;' id='prev_2'>上一步</button>
+				<button id='next_3'>下一步</button>
+			</div>
+		</div>
+		<!--弹框3结束-->
+		<!--弹框4-->
+		<div class="tanchuang1 tanchuang4" style='display:none;'>
+			<div class="tanchuang1_t">
+				<div class="tanchuang1_t_t">
+					&#xe600;
+				</div>
+				<div class="tanchuang1_t_b">
+					查看
+				</div>
+			</div>
+			<div class="tanchuang1_c"  style=''>
+				<div class="tanchuang1_c_l">
+					<div class="name_input">
+						<span>报告名称</span>
+						<div class="float-rightd" style="width:184px;display:inline-block;margin-top:32px;">
+		                    <select class="form-control m-bot15 form-control_new">
+		                       <option>三十检测</option>
+		                       <option>四实检测</option>
+		                       <option>五实检测</option>
+		                       <option>六实检测</option>
+		                       <option>七实检测</option>
+		                    </select>
+		                 </div>
+					</div>
+					<ul class='xuanze_list'>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+						<li>
+							<label class="label_check c_on" for="checkbox-01">
+                            	<input name="sample-checkbox-01" value="1" type="checkbox" checked="">
+                            	<span class='chekSpan'>I agree to the 你好.</span>
+                            </label>
+						</li>
+					</ul>
+				</div>
+				<div class="mail_show">
+					<div class="mail_show_l">
+						<span>邮件名称</span>
+						<div class="mail_sh">
+							<p>15011546848@163.com</p>
+							<p>17711546848@163.com</p>
+							<p>17311546848@163.com</p>
+							<p>15311546848@163.com</p>
+						</div>
+					</div>
+					<div class="mail_show_r">
+						<ul>
+							<li>
+								<span>发送时间</span>
+								<input type="text">
+							</li>
+							<li style='margin-top:10px;'>
+								<span>发送条件</span>
+								<input type="text">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="tanchuang1_b">
+				<button style='background:transparent;' id='sure_close'>确定</button>
+				<button id='prev_3'>上一步</button>
+			</div>
+		</div>
+		<!--弹框4结束-->
+		<!--弹框5-->
+		<div class="tanchuang5" style='display:none;'>
+			<div class="tanchuang5_top">
+				<ul>
+					<li>仪表板名称<i>&#xe611;</i></li>
+					<li>发送状态<i>&#xe611;</i></li>
+					<li>发送时间<i>&#xe611;</i></li>
+				</ul>
+			</div>
+			<div class="tanchuang5_bottom">
+				<ul>
+					<li>仪表板名称</li>
+					<li style='color:#1CA722;'><i style='color:#1CA722;'>&#xe61e;</i>成功</li>
+					<li>2016-12-02 12:00</li>
+				</ul>
+				<ul>
+					<li>仪表板名称</li>
+					<li style='color:#C82900;'><i style='color:#C82900;'>&#xe60d;</i>失败</li>
+					<li>2016-12-03 12:00</li>
+				</ul>
+			</div>
+		</div>
+		<!--弹框5结束-->
+	</div>
+	<script>
+		var tanchuceng = $('.tanchuang');
+		var tanchuceng1 = $('.tanchuang0');
+		var tanchuceng2 = $('.tanchuang2');
+		var tanchuceng3 = $('.tanchuang3');
+		var tanchuceng4 = $('.tanchuang4');
+		var tanchuceng5 = $('.tanchuang5');
+		$('.closeBtn').click(function(){
+			tanchuceng.stop(true).fadeOut(400);
+			allClose();
+		});
+		function allClose(){
+			tanchuceng1.stop(true).fadeOut(200);
+			tanchuceng2.stop(true).fadeOut(200);
+			tanchuceng3.stop(true).fadeOut(200);
+			tanchuceng4.stop(true).fadeOut(200);
+			tanchuceng5.stop(true).fadeOut(200);
+		}
+		$('#button_add').click(function(){
+			tanchuceng.stop(true).fadeIn(400);
+			tanchuceng1.stop(true).fadeIn(400);
+		});
+		$('#next_1').click(function(){
+			allClose();
+			tanchuceng2.stop(true).fadeIn(400);
+		});
+		$('#prev_1').click(function(){
+			allClose();
+			tanchuceng1.stop(true).fadeIn(400);
+		});
+		$('#next_2').click(function(){
+			allClose();
+			tanchuceng3.stop(true).fadeIn(400);
+		});
+		$('#prev_2').click(function(){
+			allClose();
+			tanchuceng2.stop(true).fadeIn(400);
+		});
+		$('#next_3').click(function(){
+			allClose();
+			tanchuceng4.stop(true).fadeIn(400);
+		});
+		$('#prev_3').click(function(){
+			allClose();
+			tanchuceng3.stop(true).fadeIn(400);
+		});
+		$('#sure_close').click(function(){
+			tanchuceng.stop(true).fadeOut(400);
+			allClose();
+		});
+		$('.eye_cha').click(function(){
+			allClose();
+			tanchuceng.stop(true).fadeIn(400);
+			tanchuceng5.stop(true).fadeIn(400);
+		});
+	</script>
+</body>
+</html>

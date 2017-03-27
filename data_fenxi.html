@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据分析</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME ICON STYLESHEET -->
+    <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css"><!-- DATATABLE CSS -->
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/byit.css">
+	<link rel="stylesheet" href="css/newuAdowncss/css.css">
+	<link rel="stylesheet" href="css/newuAdowncss/newUser.css">
+	<style>
+		
+	</style>
+	<script src='js/jquery-1.11.1.min.js'></script>
+	<script src="layer/layer.js"></script>
+</head>
+<body>
+	<div class="wrapbody">
+	
+    <!--banner-->
+
+    <!--banner-->
+    <div class="mainbody" style="margin-top:0;">
+    	
+        <div class="collbdy" style='min-height:0;'>
+        	<div class="tiaojian">
+                <div class="tiaojian_top">
+                    <span>数据分析</span>
+                </div>
+                <ul class='tiaojian_bottom' style='' id='hide_div'>
+                    <li class='tiaojian_li'>
+                       <span>电子银行:</span> 
+                       <ol>
+                           <li class='active'>手机银行</li>
+                           <li>电话银行</li>
+                           <li>资金归集</li>
+                           <li>微信银行</li>
+                           <li>网上银行</li>
+                           <li>营销银行</li>
+                           <li>产品</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li'>
+                       <span>小微业务:</span> 
+                       <ol>
+                           <li>综合业务</li>
+                           <li>小微产品</li>
+                           <li>小微存款</li>
+                           <li>客户评级</li>
+                           <li>商贷通</li>
+                           <li>项目规划</li>
+                           <li>小微指标</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li'>
+                       <span>公司业务:</span> 
+                       <ol>
+                           <li>千里客户挖掘</li>
+                           <li>客户挖掘</li>
+                           <li>对公产品分析</li>
+                           <li>对公基础数据分析</li>
+                           <li>风险管理</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li'>
+                       <span>对外报送:</span> 
+                       <ol>
+                           <li>对外报1</li>
+                           <li>对外报2</li>
+                           <li>对外报3</li>
+                           <li>对外报4</li>
+                           <li>对外报5</li>
+                           <li>对外报6</li>
+                           <li>对外报7</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li'>
+                       <span>小区业务:</span> 
+                       <ol>
+                           <li>小区业务1</li>
+                           <li>小区业务2</li>
+                           <li>小区业务3</li>
+                           <li>小区业务4</li>
+                           <li>小区业务5</li>
+                           <li>小区业务6</li>
+                           <li>小区业务7</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li'>
+                       <span>计划财务:</span> 
+                       <ol>
+                           <li>计划财务1</li>
+                           <li>计划财务2</li>
+                           <li>计划财务3</li>
+                           <li>计划财务4</li>
+                           <li>计划财务5</li>
+                           <li>计划财务6</li>
+                           <li>计划财务7</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li'>
+                       <span>反洗钱:</span> 
+                       <ol>
+                           <li>反洗钱1</li>
+                           <li>反洗钱2</li>
+                           <li>反洗钱3</li>
+                           <li>反洗钱4</li>
+                           <li>反洗钱5</li>
+                           <li>反洗钱6</li>
+                           <li>反洗钱7</li>
+                       </ol>
+                    </li>
+                    <li class='tiaojian_li' style='border-bottom:none;'>
+                       <span>运营分析:</span> 
+                       <ol>
+                           <li>运营1</li>
+                           <li>运营2</li>
+                           <li>运营3</li>
+                           <li>运营4</li>
+                           <li>运营5</li>
+                           <li>运营6</li>
+                           <li>运营7</li>
+                       </ol>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="dianzan_list">
+        	<h5 class='dianzan_list_h5'>分行</h5>
+			<ul class="dianzan_list_ul">
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o" class='share_box'><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+				<li class="dianzan_list_li">
+					<ol class="dianzan_list_ol">
+						<li class="list_oli list_oli_one">
+							太原分行第一条
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-comments"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#thumbs-up" class='active'><i class="fa fa-thumbs-up"></i>100</a>
+						</li>
+						<li class="list_oli">
+							<a href="#"><i class="fa fa-bookmark"></i>200</a>
+						</li>
+						<li class="list_oli">
+							<a href="#share-square-o"><i class="fa fa-share-square-o"></i>200</a>
+						</li>
+					</ol>
+				</li>
+			</ul>
+        </div>
+        <!--分页-->
+        <!-- <div class="pagingtion" style='display:none;'>
+            <div class="digg">
+                <span class="disabled"> 上一页 </span>
+                <span class="current">1</span>
+                <a href="#?page=2">2</a>
+                <a href="#?page=3">3</a>
+                ...
+                <a href="#?page=4">19</a>
+                <a href="#?page=5">20</a>
+                <a href="#?page=2"> 下一页 </a>
+            </div>
+        </div> -->
+        <!--分页-->		
+    </div>
+    <script type="text/javascript">
+    	$('.tiaojian_li ol li').click(function(){
+    		$(this).addClass('active').siblings('li').removeClass('active');
+    	});
+    	$('.share_box').click(function(){
+          layer.open({
+            type: 2,
+            title: '分享',
+            fix: false,
+            maxmin: true,
+            shadeClose: true,
+            area: ['1000px', '530px'],
+            content: 'share.html',
+            end: function(){
+              layer.tips('Hi', '#about', {tips: 1})
+            }
+          });
+        });
+    </script>
+</body>
+</html>

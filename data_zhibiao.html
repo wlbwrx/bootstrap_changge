@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数据指标</title>
+	<link href="css/common.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+    <link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+    <link href="css/animations.css" rel="stylesheet"><!-- ANIMATION CSS -->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"><!-- FONT AWESOME ICON STYLESHEET -->
+    <link rel="stylesheet" href="assets/data-tables/DT_bootstrap.css"><!-- DATATABLE CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/fuelux/css/tree-style.css">
+    <link href="css/style.css" rel="stylesheet"><!-- THEME BASIC CSS -->
+    <link href="css/style-responsive.css" rel="stylesheet"><!-- THEME BASIC RESPONSIVE  CSS -->
+    <link rel="stylesheet" href="css/byit.css">
+    <link rel="stylesheet" href="css/layui.css">
+    <script src="js/jquery-1.11.1.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+	<script src="layer/layer.js"></script>
+</head>
+<body>
+	<div class="data_zhibiao">
+		<div class="data_zhibiao_in" style='width:1200px;'>
+			<h4 class='h4_bt'>数据指标</h4>
+			<h3 class='h3_bt'>数据指标</h3>
+			<ul class="data_zhibiao_ul">
+				<li class="data_zhibiao_uli">
+					<span><img src="images/zhibiao1.png" alt=""></span>
+					<i>存款指标</i>
+					<strong>存款指标</strong>
+				</li>
+				<li class="data_zhibiao_uli">
+					<span><img src="images/zhibiao2.png" alt=""></span>
+					<i>贷款指标</i>
+					<strong>贷款指标</strong>
+				</li>
+				<li class="data_zhibiao_uli">
+					<span><img src="images/zhibiao3.png" alt=""></span>
+					<i>对公指标</i>
+					<strong>对公指标</strong>
+				</li>
+				<li class="data_zhibiao_uli">
+					<span><img src="images/zhibiao4.png" alt=""></span>
+					<i>全部指标</i>
+					<strong>全部指标</strong>
+				</li>
+				<li class="data_zhibiao_uli">
+					<span><img src="images/zhibiao5.png" alt=""></span>
+					<i>同行指标</i>
+					<strong>同行指标</strong>
+				</li>
+				<li class="data_zhibiao_uli">
+					<span><img src="images/zhibiao6.png" alt=""></span>
+					<i>个人指标</i>
+					<strong>个人指标</strong>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$('.data_zhibiao_uli').click(function(){
+	      layer.open({
+	        type: 2,
+	        title: '查看个人指标',
+	        fix: false,
+	        maxmin: true,
+	        shadeClose: true,
+	        area: ['1100px', '600px'],
+	        content: 'data_zhibiao_in.html',
+	        end: function(){
+	          layer.tips('Hi', '#about', {tips: 1})
+	        }
+	      });
+	    });
+	</script>
+</body>
+</html>

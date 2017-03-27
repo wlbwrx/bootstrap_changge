@@ -1,0 +1,93 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="pragma" content="no-cache" />
+	<link href="css/bootstrap.min.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+  	<link href="css/common.css" rel="stylesheet">
+  	<link href="css/bootstrap-reset.css" rel="stylesheet"><!-- BOOTSTRAP CSS -->
+  	<link href="css/animations.css" rel="stylesheet"><!-- ANIMATION CSS -->
+	<link rel="stylesheet" type="text/css" href="jquery/themes/default/easyui.css"></link>
+	<link rel="stylesheet" type="text/css" href="jquery/themes/icon.css"></link>
+	<link rel="stylesheet" type="text/css" href="common/css/query.css" ></link>
+	<link rel="stylesheet" href="css/easyui_change1.css">
+	<script type="text/javascript" src="jquery/jquery-1.6.min.js"></script>
+	<script type="text/javascript" src="jquery/jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="jquery/locale/easyui-lang-zh_CN.js"></script>
+	<script type="text/javascript" src="common/js/common.js"></script>
+	<style>
+
+	</style>
+</head>
+<body>
+        <div id="workBookPanel" class="easyui-layout" fit="true" style=''>
+			<div id="left" region="west" split="false" style="width:450px; height:60%;background:#fff;">
+				<div id="workPanel">
+				    <form method="post" id="approvalQueryForm">
+						<table align="center" class="querytable" id="queryDiv">
+							<tr>
+								<td width="100%" style='text-align:center;font-size:15px;color:#666;'><span>角色列表</span></td>
+							    <!-- <td width="25%"><input type="text" id="workname" name="workname" class=" input_bg"/></td>
+							    <td width="20%">
+									<a href="#" class="easyui-linkbutton" iconCls="icon-search" onclick="queryWorkname()">查询</a>
+								</td> -->
+							</tr>
+						</table>
+					</form>
+				</div>
+				<table id="leftWorkBook"></table>
+			</div>
+		
+			<div id="center" region="center" align="center" style="width:50px; height:60%;">
+				<div style="padding-top: 200px;">
+					<!-- <a href="#" id="savebutton" class="easyui-linkbutton" onclick="toRightWorkBook()"><span>》右移</span></a> -->
+					<button type="button" class="btn btn-primary">
+	                    右移→
+	                 </button>
+					<br/>
+					<br/>
+					<!-- <a href="#" class="easyui-linkbutton" onclick="toLeftWorkBook()"><span>《左移</span></a> -->
+					<button type="button" class="btn btn-primary">
+                    	←左移
+                  	</button>
+				</div>
+			</div>
+			<div id="right" region="east"  style="width:450px; height:60%;background:#fff;">
+				<div id="workPanel">
+				    <form method="post" id="approvalQueryForm">
+						<table align="center" class="querytable" id="queryDiv">
+							<tr>
+								<td width="100%" style='text-align:center;font-size:15px;color:#666;'><span>角色列表</span></td>
+							    <!-- <td width="25%"><input type="text" id="workname" name="workname" class=" input_bg"/></td>
+							    <td width="20%">
+									<a href="#" class="easyui-linkbutton" iconCls="icon-search" onclick="queryWorkname()">查询</a>
+								</td> -->
+							</tr>
+						</table>
+					</form>
+				</div>
+				<table id="rightWorkBook"></table>
+			</div>
+			
+		</div>
+		<div id="bottom" class='bottom_bbttnn' region="south" style='text-align: center;'>
+			<table class="button_area_absolute" align="center" style='width:100%;'>
+   				<tr align="center">
+   					 <td>
+   					    <!-- <a href="#" id="savebutton" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveWorkBook()"><span>保存</span></a>
+						<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="closePanel()"><span>取消</span></a> -->
+						<button type="button" class="btn btn-primary" style='margin-right:15px;'>
+		                    保存
+		                 </button>
+						<!-- <a href="#" class="easyui-linkbutton" onclick="toLeftWorkBook()"><span>《左移</span></a> -->
+						<button type="button" class="btn btn-danger" style='margin-right:15px;'>
+	                    	取消
+	                  	</button>
+   					 </td>
+   				</tr>
+ 			</table>
+		</div>
+	
+</body>
+
+</html>
